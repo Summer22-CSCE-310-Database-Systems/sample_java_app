@@ -1,0 +1,19 @@
+package com.springboot.chefs.demo1.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class IndexController {
+	
+	    @RequestMapping("/")
+	    public String index() {
+	        return "forward:/index.jsp";
+	    }
+	    
+	    @RequestMapping("/aboutus")
+	    public String aboutus() {
+	        return "forward:/aboutus.jsp";
+	    }
+	
+}
